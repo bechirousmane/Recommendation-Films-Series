@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter une notation</title>
+</head>
+<body>
+    <h1>Ajouter une notation</h1>
+    <form action="{{ url_for('add_rating') }}" method="post">
+        <label for="rating">Notation :</label>
+        <input type="text" id="rating" name="rating">
+        <input type="submit" value="Ajouter">
+    </form>
+</body>
+</html>
